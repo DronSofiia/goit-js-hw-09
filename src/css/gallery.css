@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.gallery {
+    list-style: none;
+    width: 1128px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 20px auto;
+}
+
+.gallery-item {
+    width: calc((100% - 2 * 24)/3);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 200px;
+}
+
+.gallery-image:hover {
+    cursor: pointer;
+}
+
+
+
+body .sl-overlay {
+    background-color: rgba(46, 47, 66, 0.8);
+}
+
+.sl-prev,
+.sl-next,
+.sl-close {
+    filter: invert(1);
+}
+
